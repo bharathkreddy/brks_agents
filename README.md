@@ -10,6 +10,12 @@
    - With hugging face transformers library - weights directly used by frameworks like pytorch etc.
    - Ollama to run locally.
 
+NOTE: To replicate this work -
+
+1. git clone the repo
+2. run `uv sync` (if you dont use UV - perhaps you should check it out.)
+3. Now you would have same env, vars, python version and libraries as i have.
+
 ### [Single agent experiments](text_summarization_beautifulSoup.ipynb)
 
 1. Explores usage of a few tools to scrape websites beyond just `requests` library
