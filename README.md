@@ -40,3 +40,26 @@ Building a multi-model chatbot with Streaming AI ui, memory managed, context enh
 3. Multi-shot prompting and context enrichment
 4. Providing tools, building custom tools, allowing code execution by models.
 5. Integrating Image and Sound generation.
+
+### [Transformers and everything about them](Trasnformers.ipynb)
+
+1. `Huggingface pipelines` (see hugging face transformers repo to understand default models for each task.). I could use pipelines for all types of things where i did not need much control over underlying internals. Good for most of tasks, just identify the task, a model good for it and huggingface transformers library abstracts everything away !. I tried all default models for
+   - Sentiment analysis
+   - ner
+   - classifier
+   - Q & A
+   - Summarizer
+   - translation
+   - zero-shot-classifier
+   - text generation
+   - image generation
+   - text-to-speech models.
+2. `tokenizers` : When Deeper control is required. I learnt these
+   - Create tokenizers for different models.
+     - vocab, added cocab of tokenizers, encoding and decoding.
+     - comparing tokenizers for `instruct` variant of llama-3b, phi-3 and Qwen models. `instruct` variants have been trained to expect `chat-prompts`.
+     - See tokenizer for code only models like `starcoder2-15b`
+   - Translate between text and tokens
+   - Understand special tokens and chat templates
+3. Loading & quantization of models with bits and bytes.
+   -
